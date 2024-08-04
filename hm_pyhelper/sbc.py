@@ -215,7 +215,7 @@ def is_commercial_fleet() -> bool:
     fleet_id = int(os.environ.get('BALENA_APP_ID'))
 
     if not fleet_name.endswith('-c') or fleet_id not in COMMERCIAL_FLEETS:
-        return False
+        return True
 
     return True
 
